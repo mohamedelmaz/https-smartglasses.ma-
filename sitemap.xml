@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>خريطة الموقع – smartglasses.ma</title>
+    <meta name="description" content="خريطة الموقع الكاملة لـ smartglasses.ma تشمل جميع الصفحات والملفات والهيكل التقني للمشروع." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Tajawal', sans-serif; background: #050505; color: #e0e0e0; padding: 2rem 1rem; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .gradient-text { background: linear-gradient(135deg, #60A5FA, #3B82F6, #818CF8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .card { background: #111; border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 1rem; padding: 1.5rem; transition: border-color 0.2s; }
+        .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+        .badge { background: rgba(59, 130, 246, 0.15); color: #60A5FA; font-size: 0.7rem; padding: 0.2rem 0.7rem; border-radius: 2rem; display: inline-block; font-weight: 600; }
+        .badge-yellow { background: rgba(234, 179, 8, 0.15); color: #FBBF24; }
+        .tree { font-family: 'Cairo', monospace; font-size: 0.9rem; line-height: 2; color: #aaa; direction: ltr; text-align: left; background: #0a0a0a; padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(255, 255, 255, 0.05); overflow-x: auto; }
+        .tree .dir { color: #60A5FA; }
+        .tree .file { color: #aaa; }
+        .tree .highlight { color: #FBBF24; }
+        hr { border: none; height: 1px; background: linear-gradient(to left, transparent, rgba(59, 130, 246, 0.2), transparent); margin: 2rem 0; }
+        h1 { font-family: 'Cairo', sans-serif; font-weight: 800; font-size: 2.2rem; margin-bottom: 0.5rem; }
+        h2 { font-family: 'Cairo', sans-serif; font-weight: 700; font-size: 1.5rem; margin: 2rem 0 1rem; color: #fff; }
+        ul { list-style: none; padding: 0; }
+        ul li { padding: 0.4rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.04); display: flex; align-items: center; gap: 0.75rem; }
+        ul li:last-child { border-bottom: none; }
+        .icon { font-size: 1.2rem; width: 2rem; text-align: center; flex-shrink: 0; }
+        .url { color: #60A5FA; font-size: 0.8rem; direction: ltr; display: inline-block; background: rgba(255, 255, 255, 0.04); padding: 0.1rem 0.6rem; border-radius: 0.5rem; font-family: monospace; }
+        .lang-badge { font-size: 0.65rem; background: rgba(255, 255, 255, 0.06); padding: 0.1rem 0.5rem; border-radius: 0.5rem; color: #888; margin-right: 0.5rem; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } h1 { font-size: 1.6rem; } .tree { font-size: 0.7rem; padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex items-center gap-3 mb-2">
+            <span class="text-3xl">🗺️</span>
+            <h1>خريطة الموقع <span class="gradient-text">smartglasses.ma</span></h1>
+        </div>
+        <p class="text-gray-400 text-sm mb-6">
+            الهيكل الكامل للمشروع — جميع الصفحات، الملفات، السياسات، والإعدادات التقنية.
+            <span class="text-gray-500 block mt-1">📍 الإصدار 2.0 – شامل للغتين العربية والفرنسية</span>
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+            <div class="card text-center"><div class="text-2xl">📄</div><div class="text-sm font-medium text-white">9+</div><div class="text-xs text-gray-500">صفحات</div></div>
+            <div class="card text-center"><div class="text-2xl">🌐</div><div class="text-sm font-medium text-white">2</div><div class="text-xs text-gray-500">لغات</div></div>
+            <div class="card text-center"><div class="text-2xl">📁</div><div class="text-sm font-medium text-white">12+</div><div class="text-xs text-gray-500">ملف</div></div>
+            <div class="card text-center"><div class="text-2xl">⚡</div><div class="text-sm font-medium text-white">SPA</div><div class="text-xs text-gray-500">تطبيق صفحة واحدة</div></div>
+        </div>
+
+        <h2>🗂️ صفحات الموقع</h2>
+        <div class="grid-2">
+            <div class="card"><div class="flex items-center gap-2"><span class="icon">🏠</span><div><div class="font-bold text-white">الرئيسية</div><div class="text-xs text-gray-500">Home</div></div><span class="badge mr-auto">#home</span></div><div class="text-xs text-gray-400 mt-2"><span class="url">/</span><span class="lang-badge">AR</span><span class="lang-badge">FR</span></div><p class="text-sm text-gray-400 mt-2">الصفحة الرئيسية مع الهيرو، المنتجات، المميزات، آراء العملاء، وشريط الثقة.</p></div>
+            <div class="card"><div class="flex items-center gap-2"><span class="icon">🛒</span><div><div class="font-bold text-white">المنتجات</div><div class="text-xs text-gray-500">Products</div></div><span class="badge mr-auto">#products</span></div><div class="text-xs text-gray-400 mt-2"><span class="url">/#products</span><span class="lang-badge">AR</span><span class="lang-badge">FR</span></div><p class="text-sm text-gray-400 mt-2">3 موديلات: Ultra، Pro، Lite مع قائمة الميزات والأسعار وأزرار الطلب.</p></div>
+            <div class="card"><div class="flex items-center gap-2"><span class="icon">⭐</span><div><div class="font-bold text-white">المميزات</div><div class="text-xs text-gray-500">Why Us</div></div><span class="badge mr-auto">#features</span></div><div class="text-xs text-gray-400 mt-2"><span class="url">/#features</span><span class="lang-badge">AR</span><span class="lang-badge">FR</span></div><p class="text-sm text-gray-400 mt-2">4 أسباب لاختيارنا: الجودة، التوصيل السريع، الابتكار، وضمان الجودة.</p></div>
+            <div class="card"><div class="flex items-center gap-2"><span class="icon">💬</span><div><div class="font-bold text-white">آراء العملاء</div><div class="text-xs text-gray-500">Testimonials</div></div><span class="badge mr-auto">#testimonials</span></div><div class="text-xs text-gray-400 mt-2"><span class="url">/#testimonials</span><span class="lang-badge">AR</span><span class="lang-badge">FR</span></div><p class="text-sm text-gray-400 mt-2">3 شهادات من عملاء حقيقيين مع أسماء ومدن (مع ترجمة للفرنسية).</p></div>
+            <div class="card"><div class="flex items-center gap-2"><span class="icon">↩️</span><div><div class="font-bold text-white">سياسة الإرجاع</div><div class="text-xs text-gray-500">Return Policy</div></div><span class="badge badge-yellow mr-auto">modal</span></div><div class="text-xs text-gray-400 mt-2"><span class="url">#return (modal)</span><span class="lang-badge">AR</span><span class="lang-badge">FR</span></div><p class="text-sm text-gray-400 mt-2">مدة الإرجاع 14 يومًا، الشروط، الإجراءات، الاسترداد، والاستبدال.</p></div>
+            <div class="card"><div class="flex items-center gap-2"><span class="icon">🔒</span><div><div class="font-bold text-white">سياسة الخصوصية</div><div class="text-xs text-gray-500">Privacy Policy</div></div><span class="badge badge-yellow mr-auto">modal</span></div><div class="text-xs text-gray-400 mt-2"><span class="url">#privacy (modal)</span><span class="lang-badge">AR</span><span class="lang-badge">FR</span></div><p class="text-sm text-gray-400 mt-2">البيانات التي نجمعها، كيفية استخدامها، حمايتها، وحقوقك.</p></div>
+            <div class="card"><div class="flex items-center gap-2"><span class="icon">📜</span><div><div class="font-bold text-white">شروط الاستخدام</div><div class="text-xs text-gray-500">Terms of Use</div></div><span class="badge badge-yellow mr-auto">modal</span></div><div class="text-xs text-gray-400 mt-2"><span class="url">#terms (modal)</span><span class="lang-badge">AR</span><span class="lang-badge">FR</span></div><p class="text-sm text-gray-400 mt-2">شروط استخدام الموقع، الطلبات، الدفع، التوصيل، والقانون الواجب التطبيق.</p></div>
+            <div class="card"><div class="flex items-center gap-2"><span class="icon">🛡️</span><div><div class="font-bold text-white">ضمان الجودة</div><div class="text-xs text-gray-500">Quality Warranty</div></div><span class="badge badge-yellow mr-auto">modal</span></div><div class="text-xs text-gray-400 mt-2"><span class="url">#warranty (modal)</span><span class="lang-badge">AR</span><span class="lang-badge">FR</span></div><p class="text-sm text-gray-400 mt-2">مدة الضمان سنة، ما يشمل وما لا يشمل، وكيفية تقديم طلب الضمان.</p></div>
+            <div class="card"><div class="flex items-center gap-2"><span class="icon">📖</span><div><div class="font-bold text-white">دليل المستخدم</div><div class="text-xs text-gray-500">README</div></div><span class="badge badge-yellow mr-auto">modal</span></div><div class="text-xs text-gray-400 mt-2"><span class="url">#readme (modal)</span><span class="lang-badge">AR</span><span class="lang-badge">FR</span></div><p class="text-sm text-gray-400 mt-2">دليل كامل للمستخدم: الميزات، طريقة الطلب، والأسئلة الشائعة.</p></div>
+            <div class="card"><div class="flex items-center gap-2"><span class="icon">⚠️</span><div><div class="font-bold text-white">صفحة غير موجودة</div><div class="text-xs text-gray-500">404 Page</div></div><span class="badge badge-yellow mr-auto">modal</span></div><div class="text-xs text-gray-400 mt-2"><span class="url">#404 (modal)</span><span class="lang-badge">AR</span><span class="lang-badge">FR</span></div><p class="text-sm text-gray-400 mt-2">صفحة خطأ ودية مع روابط للعودة إلى الرئيسية أو المنتجات.</p></div>
+            <div class="card"><div class="flex items-center gap-2"><span class="icon">📦</span><div><div class="font-bold text-white">نموذج الطلب</div><div class="text-xs text-gray-500">Order Form</div></div><span class="badge badge-green mr-auto">modal</span></div><div class="text-xs text-gray-400 mt-2"><span class="url">#order (modal)</span><span class="lang-badge">AR</span><span class="lang-badge">FR</span></div><p class="text-sm text-gray-400 mt-2">نموذج طلب مع حقول: الاسم، رقم الهاتف، المدينة. يوجه إلى واتساب لتأكيد الطلب.</p></div>
+        </div>
+
+        <hr />
+        <h2>📁 هيكل الملفات</h2>
+        <div class="tree">
+            <span class="dir">smartglasses.ma/</span><br />
+            │── <span class="file">index.html</span> <span class="highlight">← الملف الرئيسي (SPA)</span><br />
+            │── <span class="file">sitemap.html</span> <span class="highlight">← هذه الصفحة</span><br />
+            │<br />
+            ├── <span class="dir">css/</span><br />
+            │&nbsp;&nbsp; └── <span class="file">style.css</span> <span class="highlight">← الأنماط الأساسية (مضمنة في index.html)</span><br />
+            │<br />
+            ├── <span class="dir">js/</span><br />
+            │&nbsp;&nbsp; └── <span class="file">app.js</span> <span class="highlight">← JavaScript الرئيسي (مضمن في index.html)</span><br />
+            │<br />
+            ├── <span class="dir">assets/</span><br />
+            │&nbsp;&nbsp; ├── <span class="dir">img/</span><br />
+            │&nbsp;&nbsp; │&nbsp;&nbsp; ├── <span class="file">logo.png</span><br />
+            │&nbsp;&nbsp; │&nbsp;&nbsp; ├── <span class="file">og-image.jpg</span> <span class="highlight">← صورة Open Graph</span><br />
+            │&nbsp;&nbsp; │&nbsp;&nbsp; └── <span class="file">favicon.ico</span><br />
+            │&nbsp;&nbsp; └── <span class="dir">icons/</span> <span class="highlight">← أيقونات SVG (via Iconify)</span><br />
+            │<br />
+            ├── <span class="dir">pages/</span> <span class="highlight">← (في حالة التقسيم إلى صفحات منفصلة)</span><br />
+            │&nbsp;&nbsp; ├── <span class="file">home.html</span><br />
+            │&nbsp;&nbsp; ├── <span class="file">products.html</span><br />
+            │&nbsp;&nbsp; ├── <span class="file">return-policy.html</span><br />
+            │&nbsp;&nbsp; ├── <span class="file">privacy-policy.html</span><br />
+            │&nbsp;&nbsp; ├── <span class="file">terms.html</span><br />
+            │&nbsp;&nbsp; ├── <span class="file">warranty.html</span><br />
+            │&nbsp;&nbsp; ├── <span class="file">readme.html</span><br />
+            │&nbsp;&nbsp; └── <span class="file">404.html</span><br />
+            │<br />
+            └── <span class="dir">.htaccess</span> <span class="highlight">← إعدادات السيرفر (Apache)</span><br />
+            &nbsp;&nbsp;&nbsp; <span class="file">robots.txt</span><br />
+            &nbsp;&nbsp;&nbsp; <span class="file">sitemap.xml</span> <span class="highlight">← خريطة الموقع لمحركات البحث</span>
+        </div>
+        <div class="text-xs text-gray-500 mt-3">💡 <span class="text-gray-400">ملاحظة:</span> النسخة الحالية هي <strong>تطبيق صفحة واحدة (SPA)</strong> مع توجيه داخلي. الملفات في <span class="text-blue-400">pages/</span> اختيارية للتوسع المستقبلي.</div>
+
+        <hr />
+        <h2>🔍 تحسين محركات البحث (SEO)</h2>
+        <div class="grid-2">
+            <div class="card"><h3>📌 البيانات الأساسية</h3><ul><li><span class="icon">📄</span> <span class="text-white">Title</span> <span class="text-gray-500 text-sm">— ديناميكي حسب الصفحة واللغة</span></li><li><span class="icon">📝</span> <span class="text-white">Description</span> <span class="text-gray-500 text-sm">— مُترجم للغتين</span></li><li><span class="icon">🔑</span> <span class="text-white">Keywords</span> <span class="text-gray-500 text-sm">— نظارات ذكية، المغرب، ...</span></li><li><span class="icon">🤖</span> <span class="text-white">Robots</span> <span class="text-gray-500 text-sm">— index, follow</span></li><li><span class="icon">🔗</span> <span class="text-white">Canonical</span> <span class="text-gray-500 text-sm">— https://www.smartglasses.ma/</span></li></ul></div>
+            <div class="card"><h3>📱 وسائل التواصل</h3><ul><li><span class="icon">📊</span> <span class="text-white">Open Graph</span> <span class="text-gray-500 text-sm">— title, description, image, type</span></li><li><span class="icon">🐦</span> <span class="text-white">Twitter Card</span> <span class="text-gray-500 text-sm">— summary_large_image</span></li><li><span class="icon">🧩</span> <span class="text-white">JSON-LD</span> <span class="text-gray-500 text-sm">— WebSite, Organization</span></li><li><span class="icon">📱</span> <span class="text-white">Viewport</span> <span class="text-gray-500 text-sm">— متجاوب مع جميع الأجهزة</span></li></ul></div>
+        </div>
+
+        <hr />
+        <h2>⚙️ المواصفات التقنية</h2>
+        <div class="grid-2">
+            <div class="card"><h3>🧩 التقنيات المستخدمة</h3><ul><li><span class="icon">🎨</span> <span class="text-white">Tailwind CSS</span> <span class="text-gray-500 text-sm">— CDN</span></li><li><span class="icon">🖋️</span> <span class="text-white">Fonts</span> <span class="text-gray-500 text-sm">— Cairo + Tajawal</span></li><li><span class="icon">🔣</span> <span class="text-white">Icons</span> <span class="text-gray-500 text-sm">— Iconify (Solar, Mdi)</span></li><li><span class="icon">🌐</span> <span class="text-white">Routing</span> <span class="text-gray-500 text-sm">— Hash-based SPA</span></li><li><span class="icon">💾</span> <span class="text-white">Storage</span> <span class="text-gray-500 text-sm">— localStorage (لغة، ...)</span></li></ul></div>
+            <div class="card"><h3>📦 معلومات الاتصال</h3><ul><li><span class="icon">📞</span> <span class="text-white">الهاتف</span> <span class="text-gray-500 text-sm">+212 669 102 280</span></li><li><span class="icon">💬</span> <span class="text-white">WhatsApp</span> <span class="text-gray-500 text-sm">+212 669 102 280</span></li><li><span class="icon">📧</span> <span class="text-white">البريد</span> <span class="text-gray-500 text-sm">info@smartglasses.ma</span></li><li><span class="icon">🌍</span> <span class="text-white">الموقع</span> <span class="text-gray-500 text-sm">www.smartglasses.ma</span></li></ul></div>
+        </div>
+
+        <hr />
+        <h2>✅ قائمة التدقيق للنشر</h2>
+        <div class="grid-2">
+            <div class="card"><h3>📝 المحتوى</h3><ul><li><span class="icon">✅</span> جميع النصوص مترجمة (عربي/فرنسي)</li><li><span class="icon">✅</span> السياسات الأربع مكتملة</li><li><span class="icon">✅</span> دليل المستخدم (README) موجود</li><li><span class="icon">✅</span> صفحة 404 مخصصة</li><li><span class="icon">✅</span> المنتجات مع الميزات والأسعار</li></ul></div>
+            <div class="card"><h3>🔧 التقني</h3><ul><li><span class="icon">✅</span> تحويل اللغة يعمل (AR/FR)</li><li><span class="icon">✅</span> نموذج الطلب يعمل</li><li><span class="icon">✅</span> روابط واتساب صحيحة</li><li><span class="icon">✅</span> جميع الروابط الداخلية تعمل</li><li><span class="icon">✅</span> متجاوب مع جميع الشاشات</li><li><span class="icon">✅</span> SEO مكتمل (Title, Desc, OG, JSON-LD)</li><li><span class="icon">✅</span> <span class="text-green-400">جاهز للنشر الفوري</span></li></ul></div>
+        </div>
+
+        <hr />
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500 pt-4">
+            <div><span class="text-gray-400">🗺️ خريطة الموقع – smartglasses.ma</span><span class="mx-2">|</span><span>📅 2025</span></div>
+            <div class="flex gap-4"><a href="#" class="hover:text-blue-400 transition-colors" onclick="window.location.href='/';">🏠 الرئيسية</a><a href="#" class="hover:text-blue-400 transition-colors" onclick="window.location.href='/#products';">🛒 المنتجات</a><a href="#" class="hover:text-blue-400 transition-colors" onclick="window.location.href='/#features';">⭐ المميزات</a></div>
+        </div>
+
+        <div class="mt-8 text-center text-xs text-gray-600 border-t border-white/5 pt-6">
+            <p>تم بناء هذا المشروع كـ <strong>تطبيق صفحة واحدة (SPA)</strong> مع دعم كامل للغتين العربية والفرنسية، وتحسين شامل لمحركات البحث، وجاهزية للنشر الفوري.</p>
+            <p class="mt-2 text-gray-700">📦 جميع الملفات المطلوبة موجودة في ملف <span class="text-blue-400">index.html</span> واحد مع إمكانية التوسع إلى صفحات منفصلة.</p>
+        </div>
+    </div>
+</body>
+</html>
